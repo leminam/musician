@@ -5,7 +5,8 @@ import 'swiper/dist/css/swiper.min.css';
 import Swiper from 'swiper';
 
 function initSwiper() {
-  var mySwiper = new Swiper('.swiper-container', {
+ 
+  const common = {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -17,13 +18,11 @@ function initSwiper() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  });
-
-  const common = {}; 
+  }; 
 
   Array.prototype.forEach.call(document.getElementsByClassName('JS-Slider'), function(elem) {
     if (!elem.classList.contains("JS-Slider-Ready")) {
-      const elParams = GLOBAL.parseData(elem.dataset.menuParams);
+      const elParams = GLOBAL.parseData(elem.dataset.sliderParams);
       const params = Object.assign({}, common, elParams);
 
       new Swiper(elem, params);
