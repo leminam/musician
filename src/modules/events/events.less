@@ -6,6 +6,7 @@
   background-size: cover;
   height: 1200px;
 
+
   @media (max-width: @tabletWidth) {
     margin-top: 150px;
     background-position: 53% bottom;
@@ -17,22 +18,19 @@
   }
 
   &__inner-wrapper {
-    padding: 100px 0 0 0;
-    text-align: left;
-    max-width: 30%;
-    position: relative;
-    top: -54px;
-    left: 50%;
-
+    padding: 40px 0 0 0;
+    margin: 0 0 0 50%;
+    max-width: 40%;
+    
     @media (max-width: @tabletWidth) {
-      left: 20%;
-      max-width: 57%;
+      max-width: 70%;
+      margin: 0 auto;
     }
     @media (max-width: @mobileWidth) {
-      max-width: 75%;
+      margin: 0 auto;
     }
     @media (max-width: @miniWidth) {
-      left: 18%;
+      margin: 0 auto;
     }
   }
   &__title {
