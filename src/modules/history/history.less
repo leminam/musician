@@ -8,7 +8,7 @@
 
   @media (max-width: @tabletWidth) {
     background-position: 53% bottom;
-    margin-top: 260px;
+    margin-top: 176px;
     height: 1290px;
   }
   @media (max-width: @mobileWidth) {
@@ -28,7 +28,7 @@
     @media (max-width: @tabletWidth) {
       font: 400 21px/35px @OpenSans;
       width: 80%;
-      padding: 60px 0 180px 0;
+      padding: 60px 0 150px 0;
     }
     @media (max-width: @mobileWidth) {
       font: 400 15px/25px @OpenSans;
@@ -40,7 +40,8 @@
 
     @media (max-width: @tabletWidth) {
       position: relative;
-      top: -105px;
+      top: -40px;
+      text-align: center;
     }
     @media (max-width: @mobileWidth) {
       top: 120px;
@@ -50,24 +51,25 @@
     font: 400 35.49px @Dosis;
     color: #c8c8c8;
     text-transform: uppercase;
-    padding-top: 55px;
+    padding-top: 40px;
     white-space: nowrap;
+    position: relative;
+    margin: 0 auto;
     overflow: hidden;
-    margin-top: -5px;
+    height: 57px;
 
     @media (max-width: @tabletWidth) {
       font-size: 53px;
-      margin-left: -60%;
-      position: relative;
-    }
-    @media (min-width: 751px) and (max-width:1080px) {
-      padding-top: 20px;
     }
     @media (max-width: @mobileWidth) {
       font-size: 35.49px;
     }
-    @media (max-width: @miniWidth) {
-      padding-top: 0;
+
+    &-wrapper {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   &__line {
@@ -77,8 +79,11 @@
     padding-bottom: 10px;
 
     @media (max-width: @tabletWidth) {
-      width: 220px;
       padding-bottom: 19px;
+    }
+    @media (max-width: @mobileWidth) {
+      width: 80px;
+      padding-bottom: 12px;
     }
   }
   &__date {
@@ -102,7 +107,10 @@
 
       @media (max-width: @tabletWidth) {
         margin: 0 80px 15px 0;
-      }      
+      }
+      @media (max-width: @mobileWidth) {
+        margin: 0 20px 8px 0;
+      }       
     }
     &_active::after {
       content: " ";
@@ -116,6 +124,9 @@
       @media (max-width: @tabletWidth) {
         margin: 0 0 15px 80px;
       }
+      @media (max-width: @mobileWidth) {
+        margin: 0 0 8px 20px;
+      }      
     }    
   }
   &__info {
@@ -123,7 +134,7 @@
     font: 400 14px @OpenSans;
     color: #5a5a58;
     max-width: 212px;
-    padding: 20px 0 0 27px;
+    padding: 10px 0 0 27px;
 
     @media (max-width: @tabletWidth) {
       font-size: 18px;
