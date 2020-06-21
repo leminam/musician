@@ -15,7 +15,7 @@ export default class Menu {
     this.init();
     this.ready();
   }
-
+  
   init() {
     var _this = this;
     this.elOpen.addEventListener('click', this.open.bind(this));
