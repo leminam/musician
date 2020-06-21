@@ -90,8 +90,7 @@ plugins: [
       hash: true
     }), 
     new CopyWebpackPlugin([
-      {from: 'static/img/', to: 'static/img/'},
-      {from: 'api/', to: 'api/'}
+      {from: 'static/img/', to: 'static/img/'}
     ],
     {copyUnmodified: true})
   ]
