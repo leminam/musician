@@ -2,7 +2,7 @@ import GLOBAL from '../global/global';
 import Menu from '../components/Menu';
 import './data';
 import 'swiper/dist/css/swiper.min.css';
-import Swiper from 'swiper';
+import Swiper from 'swiper/dist/js/swiper.js';
 
 function initSwiper() {
  
